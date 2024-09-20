@@ -17,7 +17,7 @@ test('should check if the password is validated properly', async () => {
         const valid = await exec(`bash execute.sh \'${randomPassword}\'`);
         expect(valid?.trim()).toBe((!!isStrongPassword(randomPassword)).toString());
     }
-});
+})
 
 describe('should check installed dependencies', () => {
     let script
